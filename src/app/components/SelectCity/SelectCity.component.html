@@ -1,0 +1,16 @@
+<div class="container" *ngIf="citiesList && citiesList.length > 0">
+    <form [formGroup]="cityForm">
+      <div class="form-group">
+          <label>Select City</label>
+          <select 
+             formControlName="citySelect"
+            class="form-control form-control-lg" (change)="onCityChange()">
+            <option value="">Please select</option>
+            <option *ngFor="let objCity of citiesList" [value]="objCity.city">{{objCity.city}}</option>
+          </select>
+          <small id="selectCityHelp" class="form-text text-muted">
+            Please select a city to proceed.
+            </small>
+        </div>
+    </form>
+</div>

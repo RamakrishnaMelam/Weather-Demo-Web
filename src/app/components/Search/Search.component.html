@@ -1,0 +1,23 @@
+<div class="container">
+  <form [formGroup]="searchForm">
+    <div class="form-group">
+      <label>Search Country</label>
+      <div class="input-group">
+        <input  type="search" class="form-control id-search" 
+                placeholder = "Search" name = "searchCountry" 
+                formControlName = "searchCountry">
+        <div class="input-group-btn">
+          <button class="btn btn-default" 
+                  type="submit" [disabled]="!searchForm.valid" 
+                  (click)="onSearch()" >
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+        </div>
+      </div>
+      <small id="searchCountryHelp" class="form-text text-muted">
+          Please eneter a country to search.
+        </small>
+      <div class="alert" *ngIf="!searchForm.controls['searchCountry'].valid && searchForm.controls['searchCountry'].touched">{{ titleAlert }}</div>
+    </div>
+  </form>
+</div>

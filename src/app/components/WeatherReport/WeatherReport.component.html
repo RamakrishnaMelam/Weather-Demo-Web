@@ -1,0 +1,19 @@
+<div class="container" *ngIf="weatherReport && weatherReport.country !== ''">
+  <div class="section3" >
+    <div class="section3_heading"><h2>Weather Report</h2> </div>
+    <div class="section3_body">
+      <ul class="square">
+        <li><b>Country:</b> {{weatherReport.country}}</li>
+        <li><b>Location:</b> {{weatherReport.location}}</li>
+        <li><b>Time:</b> {{weatherReport.time}}</li>
+        <li><b>Wind:</b> {{weatherReport.wind}}</li>
+        <li><b>Visibility:</b> {{weatherReport.visibility}}</li>
+        <li><b>Sky Conditions:</b> {{weatherReport.skyConditions}}</li>
+        <li><b>Temperature:</b> {{weatherReport.temerature}}</li>
+        <li><b>Dew Point:</b> {{weatherReport.dewPoint}}</li>
+        <li><b>Relative Humidity:</b> {{weatherReport.relativeHumidity}}</li>
+        <li><b>Pressure:</b> {{weatherReport.pressure}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
