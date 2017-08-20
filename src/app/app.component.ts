@@ -47,7 +47,7 @@ export class AppComponent {
   }
 
   getWeatherReportFromMockService(event) {
-    const result = this._searchService.getWeatherReport(
+    const result = this._searchService.getWeatherReportFromMock(
       this.weatherForm.controls['searchForm'].get('searchCountry').value,
       event.selectedCity)
       .subscribe(response => this.weatherReport = response,
