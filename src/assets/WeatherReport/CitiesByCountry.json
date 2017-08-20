@@ -1,54 +1,54 @@
 [
     {
-        "country": "Australia",
-        "city": "Sydney Airport"
+        "Country": "Australia",
+        "City": "Sydney Airport"
     },
     {
-        "country": "Australia",
-        "city": "Melbourne Airport"
+        "Country": "Australia",
+        "City": "Melbourne Airport"
     },
     {
-        "country": "Australia",
-        "city": "Brisbane Airport"
+        "Country": "Australia",
+        "City": "Brisbane Airport"
     },
     {
-        "country": "Australia",
-        "city": "Perth Airport"
+        "Country": "Australia",
+        "City": "Perth Airport"
     },
     {
-        "country": "Australia",
-        "city": "Adelaide Airport"
+        "Country": "Australia",
+        "City": "Adelaide Airport"
     },
     {
-        "country": "Australia",
-        "city": "Gold Coast Airport"
+        "Country": "Australia",
+        "City": "Gold Coast Airport"
     },
     {
-        "country": "Australia",
-        "city": "Newcastle Airport"
+        "Country": "Australia",
+        "City": "Newcastle Airport"
     },
     {
-        "country": "Londan",
-        "city": "Aberdeen Airport"
+        "Country": "Londan",
+        "City": "Aberdeen Airport"
     },
     {
-        "country": "Londan",
-        "city": "Bangor Airport"
+        "Country": "Londan",
+        "City": "Bangor Airport"
     },
     {
-        "country": "Londan",
-        "city": "Bath Airport"
+        "Country": "Londan",
+        "City": "Bath Airport"
     },
     {
-        "country": "India",
-        "city": "Hyderabad Airport"
+        "Country": "India",
+        "City": "Hyderabad Airport"
     },
     {
-        "country": "India",
-        "city": "Chennai Airport"
+        "Country": "India",
+        "City": "Chennai Airport"
     },
     {
-        "country": "India",
-        "city": "New Delhi Airport"
+        "Country": "India",
+        "City": "New Delhi Airport"
     }
 ]

@@ -1,6 +1,6 @@
-export interface CitiesByCountry {
-    country: string;
-    city: string;
+export interface CityModel {
+    City: string;
+    Country: string;
 }
 
 export interface Weather {

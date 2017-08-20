@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angular/core';
 import { AbstractControl, FormControl, FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { CitiesByCountry, Weather } from '../../app.model';
+import { CityModel, Weather } from '../../app.model';
 import { Observable } from 'rxjs/Observable';
 
 

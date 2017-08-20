@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
 import { AbstractControl, FormControl, FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { CitiesByCountry } from '../../app.model';
+import { CityModel } from '../../app.model';
 
 @Component({
   selector: 'app-SelectCity',
@@ -9,7 +9,7 @@ import { CitiesByCountry } from '../../app.model';
 })
 export class SelectCityComponent implements OnInit {
 
-  @Input() citiesList: CitiesByCountry[];
+  @Input() citiesList: CityModel[];
 
   @Input() set form([f, name]: [FormGroup, string]) {
     f.setControl(name, this.cityForm);

@@ -4,6 +4,15 @@
       <app-navbar></app-navbar>
     </div>
   </div>
+  <div class="row" *ngIf= "hasCitiesServiceFailed">
+    <div class="col-xs-12">
+      <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+            <span class="message">We're sorry, something went wrong or no records cound. Please try again later.</span>
+        </div>
+    </div>
+</div>
   <form [formGroup]="weatherForm">
     <div class="row">
       <div class="col-sm-12 col-md-6">

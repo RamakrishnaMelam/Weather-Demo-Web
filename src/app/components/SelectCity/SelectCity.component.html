@@ -6,7 +6,7 @@
              formControlName="citySelect"
             class="form-control form-control-lg" (change)="onCityChange()">
             <option value="">Please select</option>
-            <option *ngFor="let objCity of citiesList" [value]="objCity.city">{{objCity.city}}</option>
+            <option *ngFor="let objCity of citiesList" [value]="objCity.City">{{objCity.City}}</option>
           </select>
           <small id="selectCityHelp" class="form-text text-muted">
             Please select a city to proceed.
