@@ -1,6 +1,6 @@
 # Weather-Demo-Web
 
-#Dependencies
+## Dependencies
 Before we can begin, you need to ensure you have a few dependencies installed.
 •	Node.js with NPM (Node Package Manager)
 •	Angular-CLI (Command Line Interface)
@@ -20,25 +20,27 @@ After it's installed, close your console / command line and reload it. You can n
 Next, we need to install the Angular-CLI. This tool allows you to create Angular projects as well as help you with various development tasks. At the console, type:
 
 
-#Installing Angular 4 with the CLI
-> npm install -g @angular/cli
+## Installing Angular 4 with the CLI
+• > npm install -g @angular/cli
 When we run ng -v while inside an Angular project folder, it will also provide us with which version of Angular that particular project is using. 
-> git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
+• > git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
+
 Note: You will need the git command line tool to run the above command.
 After it's installed:
 > cd WeatherReport.Web
 After about a minute or so, you'll be all set!
 
-#Installing Angular 4 without the CLI
-> git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
-> cd WeatherReport.Web
-> npm install
+## Installing Angular 4 without the CLI
+• > git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
+• > cd WeatherReport.Web
+• > npm install
 
 And that's how you install (and upgrade, if need be) an Angular 4 project using the Angular CLI.
 Once it's ready, we type:
-> npm start
 
-And that's it!
+• > npm start
+
+## And that's it!
 
 
 For More Info....
