@@ -1,5 +1,48 @@
 # Weather-Demo-Web
 
+#Dependencies
+Before we can begin, you need to ensure you have a few dependencies installed.
+•	Node.js with NPM (Node Package Manager)
+•	Angular-CLI (Command Line Interface)
+•	Typescript 2.1.6 or higher
+•	@angular/cli: 1.0.0  or highrer                                 
+•	node: 6.10.0  or higher
+
+To Install Typescript 
+> npm install typescript@2.2.1 --save
+
+To check whether or not you have Node.js installed, visit your console / command line and type:
+> node -v
+If this command goes unrecognized, you need to install Node.js.
+1.	Visit the Node.js download page and choose either the Windows or Mac installer based on your OS.
+2.	Accept the agreement, choose an installation folder, and hit Next on the Custom Setup page. By default, it will install the npm package manager which we will need.
+After it's installed, close your console / command line and reload it. You can now run the node -v command and it will provide you with the current version number.
+Next, we need to install the Angular-CLI. This tool allows you to create Angular projects as well as help you with various development tasks. At the console, type:
+
+
+#Installing Angular 4 with the CLI
+> npm install -g @angular/cli
+When we run ng -v while inside an Angular project folder, it will also provide us with which version of Angular that particular project is using. 
+> git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
+Note: You will need the git command line tool to run the above command.
+After it's installed:
+> cd WeatherReport.Web
+After about a minute or so, you'll be all set!
+
+#Installing Angular 4 without the CLI
+> git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
+> cd WeatherReport.Web
+> npm install
+
+And that's how you install (and upgrade, if need be) an Angular 4 project using the Angular CLI.
+Once it's ready, we type:
+> npm start
+
+And that's it!
+
+
+For More Info....
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
 
 ## Development server
