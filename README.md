@@ -22,24 +22,28 @@ Next, we need to install the Angular-CLI. This tool allows you to create Angular
 
 
 ## Installing Angular 4 with the CLI
-• > npm install -g @angular/cli
+
+1. > npm install -g @angular/cli
+
 When we run ng -v while inside an Angular project folder, it will also provide us with which version of Angular that particular project is using. 
-• > git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
+
+2. > git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
 
 Note: You will need the git command line tool to run the above command.
 After it's installed:
-> cd WeatherReport.Web
+
+3. > cd WeatherReport.Web
 After about a minute or so, you'll be all set!
 
 ## Installing Angular 4 without the CLI
-• > git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
-• > cd WeatherReport.Web
-• > npm install
+1. > git clone https://github.com/RamakrishnaMelam/WeatherReport.Web
+2. > cd WeatherReport.Web
+3. > npm install
 
 And that's how you install (and upgrade, if need be) an Angular 4 project using the Angular CLI.
 Once it's ready, we type:
 
-• > npm start
+4. > npm start
 
 ## And that's it!
 
