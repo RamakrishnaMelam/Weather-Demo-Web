@@ -2,11 +2,12 @@
 
 ## Dependencies
 Before we can begin, you need to ensure you have a few dependencies installed.
-•	Node.js with NPM (Node Package Manager)
-•	Angular-CLI (Command Line Interface)
-•	Typescript 2.1.6 or higher
-•	@angular/cli: 1.0.0  or highrer                                 
-•	node: 6.10.0  or higher
+
+1. Node.js with NPM (Node Package Manager)
+2. Angular-CLI (Command Line Interface)
+3. Typescript 2.1.6 or higher
+4. @angular/cli: 1.0.0  or highrer                                 
+5. node: 6.10.0  or higher
 
 To Install Typescript 
 > npm install typescript@2.2.1 --save
