@@ -1,27 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { AbstractControl, FormControl, FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { SearchService } from './components/Search/Search.service';
-import { Weather, CityModel, defaultWeather } from './app.model';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  weatherForm = new FormGroup({});
-  cities: CityModel[];
-  weatherReport: Weather;
-  hasCitiesServiceFailed = false;
-  hasWeatherServiceFailed = false;
-
-  constructor(private _searchService: SearchService) { }
+SearchService) { }
 
   onCountrySearched(event) {
     this.cities = [];
     this.weatherReport = defaultWeather;
+    this.loading = true;
     this._searchService.getCitiesByCountry(event.searchCountry)
-      .subscribe(response => this.cities = response,
+      .subscribe(response => { this.cities = response, this.loading = false; },
       Error => {
         this.getCitiesByCountryFromMockService(event);
       });
@@ -31,16 +15,18 @@ export class AppComponent {
     this.cities = [];
     this.weatherReport = defaultWeather;
     this._searchService.getCitiesByCountryFromMock(event.searchCountry)
-      .subscribe(response => this.cities = response,
+      .subscribe(response => { this.cities = response, this.loading = false; },
       Error => {
         this.hasCitiesServiceFailed = true;
+        this.loading = false;
       });
   }
   onCitySelected(event) {
+    this.loading = true;
     const result = this._searchService.getWeatherReport(
       this.weatherForm.controls['searchForm'].get('searchCountry').value,
       event.selectedCity)
-      .subscribe(response => this.weatherReport = response,
+      .subscribe(response => {this.weatherReport = response, this.loading = false; },
       Error => {
         this.getWeatherReportFromMockService(event);
       });
@@ -50,9 +36,10 @@ export class AppComponent {
     const result = this._searchService.getWeatherReportFromMock(
       this.weatherForm.controls['searchForm'].get('searchCountry').value,
       event.selectedCity)
-      .subscribe(response => this.weatherReport = response,
+      .subscribe(response => {this.weatherReport = response, this.loading = false; },
       Error => {
         this.hasWeatherServiceFailed = true;
+        this.loading = false;
       });
   }
 
